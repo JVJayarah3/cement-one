@@ -38,13 +38,8 @@ if login_button:
         with st.spinner("LOADING..."):
             time.sleep(2)
         
-        switch_page("test")
-        
-        
-        
-        #region_value = "test"
-        #switch_page("Rigregions")
-        
+        switch_page("project")
+
     else:
         st.write('INCORRECT USERNAME/PASSWORD')
 
