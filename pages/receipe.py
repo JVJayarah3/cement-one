@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import numpy as np
-st.text("Test")
+
 
 total_slurry_needed = 52
 pump_out = 0.084
@@ -138,74 +138,4 @@ if bt0:
   if 'df' not in st.session_state:
       st.session_state.df=df1
   switch_page("output")
-  
-  
-"""if 'total_slurry_need' not in st.session_state:
-    st.session_state['total_slurry_need'] = total_slurry_needed
-if 'pump_out' not in st.session_state:
-    st.session_state['pump_out'] = pump_out
-if 'displacement_fluid' not in st.session_state:
-    st.session_state['displacement_fluid'] = displacement_fluid
-if 'displacing_mud' not in st.session_state:
-    st.session_state['displacing_mud'] = displacing_mud
-if 'old_mud' not in st.session_state:
-    st.session_state['old_mud'] = old_mud
-if 'toc' not in st.session_state:
-    st.session_state['toc'] = toc
-if 'tvd' not in st.session_state:
-    st.session_state['tvd'] = tvd
-if 'fc' not in st.session_state:
-    st.session_state['fc'] = fc
-if 'od' not in st.session_state:
-    st.session_state['od'] = od
-if 'csd' not in st.session_state:
-    st.session_state['csd'] = csd
-if 'client' not in st.session_state:
-    st.session_state['client'] = client
-if 'well_name' not in st.session_state:
-    st.session_state['well_name'] = well_name
-if 'date' not in st.session_state:
-    st.session_state['date'] = date   
-if 'excess_cement' not in st.session_state:
-    st.session_state['excess_cement'] = excess_cement
-if 'dead_vol' not in st.session_state:
-    st.session_state['dead_vol'] = dead_vol
-    
-if 'bump_p' not in st.session_state: 
-    st.session_state['bump_p']
-if 'cement_den' not in st.session_state: 
-    st.session_state['cement_den']
-if 'cement_sk' not in st.session_state: 
-    st.session_state['cement_sk']
-if 'preflush' not in st.session_state: 
-    st.session_state['preflush']    
-if 'woc' not in st.session_state: 
-    st.session_state['woc']  
-if 'df' not in st.session_state:
-    st.session_state.df=df
-
-  st.dataframe(df) 
-  st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
-  st.header("OBJECTIVE : TO CEMENT "+str(od)+" INCH CASING/LINER")
-  st.write("DATE :"+str(date))
-  st.write("WELL DEPTH - "+str(tvd)+" FT TVD /"+str(md)+" FT MD")
-  st.write("SHOE @ "+str(csd)+" FT "+"FLOAT COLLAR @ "+str(fc)+" FT")
-  st.header("PLAN")
-  st.write("PREPARE CEMENTING HEAD WITH PLUGS AND MAKE UP FLOWLINES")
-  st.write("PRESSURE TEST THE LINES")
-  st.write("PREPARE SLURRY AS PER RECEPIE AND PUMP - WOC.")
-  st.header("CARRYOUT OPERATIONS AS PER CEMENTING PROGRAM")
-  st.write("LOWER "+str(od)+" CASING AND LAND SHOE @ "+str(csd)+"FT AND F/C @ "+str(fc)+"FT")
-  st.write("M/UP CIRCULATING HEAD AND CIRCULATE AND CONDITION MUD PRIOR TO "+ str(od) +" CASING CEMENT JOB") 
-  st.write("CARRY OUT PRE-JOB SAFETY MEETINGS.")
-  st.write("PRESSURE TEST CEMENTING LINES @500 AND 2000 PSI")
-  st.write("PRE MIX CEMENT AS PER RECEIPE AND PREPARE "+str(total_slurry_needed)+" OF CEMENT SLURRY ")
-  preflush_stk = preflush/pump_out
-  st.write("PUMP "+str(preflush)+" OF PRE FLUSH THROUGH RIG PUMP. "+"STROKES - "+str(preflush_stk))
-  st.write("DROP BOTTOM PLUG.")
-  st.write("MIX AND PUMP "+str(total_slurry_needed)+" OF "+str(cement_den)+" PPG SLURRY BY CEMENTING UNIT.")          
-  st.write("DROP TOP PLUG")
-  displace_stk = displacement_fluid/pump_out
-  st.write("DISPLACE CEMENT WITH "+str(displacement_fluid)+" BBLS ("+str(displace_stk)+" STK) OF MUD TILL PLUG BUMPS. (BUMPING PRESSUE @ "+str(bump_p)+". PRESSURISE PLUG FURTHER TO 500 PSI)")
-  st.write("BLEED OFF PRESSURE AND CHECK FOR BPV HOLDING")          
-  st.write("WOC FOR "+str(woc)+" HRS TILL THE SURFACE CEMENT SETS  test ")"""
+ 
