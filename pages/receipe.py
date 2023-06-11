@@ -24,6 +24,10 @@ csd = 5156
 #fc = st.session_state['fc']
 #od = st.session_state['od']
 #csd = st.session_state['csd']
+#excess_cement = st.session_state['excess_cement']
+#client = st.session_state['client']
+#well_name = st.session_state['well_name']
+#date = st.session_state['date']
 
 with st.container():
   st.title("CEMENTING - DETAILS")
