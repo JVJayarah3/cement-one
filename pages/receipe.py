@@ -121,15 +121,15 @@ if bt0:
       st.session_state['dead_vol'] = dead_vol
 
   if 'bump_p' not in st.session_state: 
-      st.session_state['bump_p']
+      st.session_state['bump_p'] = bump_p
   if 'cement_den' not in st.session_state: 
-      st.session_state['cement_den']
+      st.session_state['cement_den'] = cement_den
   if 'cement_sk' not in st.session_state: 
-      st.session_state['cement_sk']
+      st.session_state['cement_sk'] = cement_sk
   if 'preflush' not in st.session_state: 
-      st.session_state['preflush']    
+      st.session_state['preflush'] = preflush   
   if 'woc' not in st.session_state: 
-      st.session_state['woc']  
+      st.session_state['woc']  = woc
   if 'df' not in st.session_state:
       st.session_state.df=df
   switch_page("output")
