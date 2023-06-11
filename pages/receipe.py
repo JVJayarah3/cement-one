@@ -79,6 +79,49 @@ df['output'] = df['output-1'] + df['output-2']
 df['unit'] =   df['unit-1'] + df['unit-2'] 
 bt0 = st.button("SUBMIT")
 bump_p =  ((toc*old_mud*0.052)+((tvd-toc)*cement_den*0.052)-((displacing_mud*fc*0.052)+((tvd-fc)*0.052*cement_den))+500)
+
+if 'total_slurry_need' not in st.session_state:
+    st.session_state['total_slurry_need'] = total_slurry_needed
+if 'pump_out' not in st.session_state:
+    st.session_state['pump_out'] = pump_out
+if 'displacement_fluid' not in st.session_state:
+    st.session_state['displacement_fluid'] = displacement_fluid
+if 'displacing_mud' not in st.session_state:
+    st.session_state['displacing_mud'] = displacing_mud
+if 'old_mud' not in st.session_state:
+    st.session_state['old_mud'] = old_mud
+if 'toc' not in st.session_state:
+    st.session_state['toc'] = toc
+if 'tvd' not in st.session_state:
+    st.session_state['tvd'] = tvd
+if 'fc' not in st.session_state:
+    st.session_state['fc'] = fc
+if 'od' not in st.session_state:
+    st.session_state['od'] = od
+if 'csd' not in st.session_state:
+    st.session_state['csd'] = csd
+if 'client' not in st.session_state:
+    st.session_state['client'] = client
+if 'well_name' not in st.session_state:
+    st.session_state['well_name'] = well_name
+if 'date' not in st.session_state:
+    st.session_state['date'] = date   
+if 'excess_cement' not in st.session_state:
+    st.session_state['excess_cement'] = excess_cement
+if 'dead_vol' not in st.session_state:
+    st.session_state['dead_vol'] = dead_vol
+    
+if 'bump_p' not in st.session_state: 
+    st.session_state['bump_p']
+if 'cement_den' not in st.session_state: 
+    st.session_state['cement_den']
+if 'cement_sk' not in st.session_state: 
+    st.session_state['cement_sk']
+if 'preflush' not in st.session_state: 
+    st.session_state['preflush']    
+if 'woc' not in st.session_state: 
+    st.session_state['woc']  
+
 if bt0:
   st.dataframe(df) 
   st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
