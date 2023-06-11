@@ -15,5 +15,5 @@ with st.container():
 st.write("----------------------------------------------------")
 submit1 = st.button("SUBMIT")
 if submit1:
-    
+    switch_page("casing_details")
 
