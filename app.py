@@ -41,6 +41,8 @@ if sub1:
       st.session_state['displacing_mud'] = displacing_mud
   if 'old_mud' not in st.session_state:
       st.session_state['old_mud'] = old_mud
+  if 'toc' not in st.session_state:
+      st.session_state['toc'] = toc
   switch_page("receipe")
 st.write("----------------------------------------------------")
  
