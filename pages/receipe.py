@@ -5,5 +5,5 @@ st.text("Test")
 
 total_slurry_needed = st.session_state['total_slurry_need'] 
 with st.container():
-  st.title("TOTAL VOLUME OF SLURRY NEEDED - ")
+  st.title("TOTAL VOLUME OF SLURRY NEEDED - "+str(total_slurry_needed))
   
