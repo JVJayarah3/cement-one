@@ -5,7 +5,9 @@ import numpy as np
 st.text("Test")
 
 total_slurry_needed = 52
+pump_out = 0.084
 #total_slurry_needed = st.session_state['total_slurry_need'] 
+#pump_out = st.session_state['pump_out']
 
 with st.container():
   st.title("CEMENTING - DETAILS")
