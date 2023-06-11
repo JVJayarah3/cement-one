@@ -6,10 +6,10 @@ st.text("Test")
 total_slurry_needed = st.session_state['total_slurry_need'] 
 with st.container():
   st.title("CEMENTING - DETAILS")
-  st.header("TOTAL VOLUME OF SLURRY NEEDED - "+str(total_slurry_needed)
+  st.title("TOTAL VOLUME OF SLURRY NEEDED - "+str(total_slurry_needed)
   cementyld = st.number_input("CEMENT YIELD (CF-SK) - ")  
   cement_sk = (total_slurryneeded/(cementyld*0.178))         
-  st.header("CEMENT-RECEIPE)
+  st.title("CEMENT-RECEIPE)
   col1,col2,col3 = st.columns(3):
   with col1:
     name1 = st.text_input("RECEIPE NAME - ")
