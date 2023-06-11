@@ -27,5 +27,6 @@ total_slurry_needed = shoetrack+rathole+annulus_vol
 sub1 = st.button("SUBMIT")
 if sub1:
   st.write("total_slurry_needed"+str(total_slurry_needed))
+  switch_page("receipe")
 st.write("----------------------------------------------------")
  
