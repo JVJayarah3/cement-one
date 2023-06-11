@@ -25,6 +25,7 @@ shoetrack = casing_cap*(csd-fc)
 rathole = ((od**2)/1029.4)*(md-csd)
 annulus_vol = (((holesize**2)-(od**2))/1029.4)*((md-toc)-(md-csd))
 total_slurry_needed = shoetrack+rathole+annulus_vol
+displacement_fluid = casing_cap*fc
 sub1 = st.button("SUBMIT")
 if sub1:
   st.write("total_slurry_needed"+str(total_slurry_needed))
@@ -32,6 +33,8 @@ if sub1:
       st.session_state['total_slurry_need'] = total_slurry_needed
   if 'pump_out' not in st.session_state:
       st.session_state['pump_out'] = pump_out
+  if 'displacement_fluid' not in st.session_state:
+      st.session_state['displacement_fluid'] = displacement_fluid
   switch_page("receipe")
 st.write("----------------------------------------------------")
  
