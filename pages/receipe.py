@@ -6,9 +6,10 @@ st.text("Test")
 
 total_slurry_needed = 52
 pump_out = 0.084
+displacement_fluid = 112.8
 #total_slurry_needed = st.session_state['total_slurry_need'] 
 #pump_out = st.session_state['pump_out']
-
+#displacement_fluid = st.session_state['displacement_fluid']
 with st.container():
   st.title("CEMENTING - DETAILS")
   st.header("TOTAL VOLUME OF SLURRY NEEDED - "+str(total_slurry_needed))
