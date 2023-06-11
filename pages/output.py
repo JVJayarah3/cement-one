@@ -53,4 +53,4 @@ st.write("DROP TOP PLUG")
 displace_stk = displacement_fluid/pump_out
 st.write("DISPLACE CEMENT WITH "+str(displacement_fluid)+" BBLS ("+str(displace_stk)+" STK) OF MUD TILL PLUG BUMPS. (BUMPING PRESSUE @ "+str(bump_p)+". PRESSURISE PLUG FURTHER TO 500 PSI)")
 st.write("BLEED OFF PRESSURE AND CHECK FOR BPV HOLDING")          
-st.write("WOC FOR "+str(woc)+" HRS TILL THE SURFACE CEMENT SETS  test ")"""
+st.write("WOC FOR "+str(woc)+" HRS TILL THE SURFACE CEMENT SETS  test ")
