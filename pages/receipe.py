@@ -33,7 +33,10 @@ md = 5167
 #date = st.session_state['date']
 #dead_vol = st.session_state['dead_vol']
 
-with st.container():
+for key in st.session_state.keys():
+  del st.session_state[key]
+
+  with st.container():
   st.title("CEMENTING - DETAILS")
   st.header("TOTAL VOLUME OF SLURRY NEEDED - "+str(total_slurry_needed))
   cement_den = st.number_input("CEMENT DENSITY (PPG) - ",min_value=1) 
@@ -76,11 +79,60 @@ df['output-2'] = df['galsk']*cement_sk
 df['unit-1'] = np.where(df['output-1'] != 0 ,"Lbs","")     
 df['unit-2'] = np.where(df['output-2'] != 0 ,"Gal","") 
 df['output'] = df['output-1'] + df['output-2']           
+df['output_s'] = df['output'].astype(str)
 df['unit'] =   df['unit-1'] + df['unit-2'] 
+df['final'] = df['receipe_name']+"-"+df['output_s']+" "+df['unit']
+
 bt0 = st.button("SUBMIT")
 bump_p =  ((toc*old_mud*0.052)+((tvd-toc)*cement_den*0.052)-((displacing_mud*fc*0.052)+((tvd-fc)*0.052*cement_den))+500)
+if bt0:
+  if 'total_slurry_need' not in st.session_state:
+    st.session_state['total_slurry_need'] = total_slurry_needed
+  if 'pump_out' not in st.session_state:
+      st.session_state['pump_out'] = pump_out
+  if 'displacement_fluid' not in st.session_state:
+      st.session_state['displacement_fluid'] = displacement_fluid
+  if 'displacing_mud' not in st.session_state:
+      st.session_state['displacing_mud'] = displacing_mud
+  if 'old_mud' not in st.session_state:
+      st.session_state['old_mud'] = old_mud
+  if 'toc' not in st.session_state:
+      st.session_state['toc'] = toc
+  if 'tvd' not in st.session_state:
+      st.session_state['tvd'] = tvd
+  if 'fc' not in st.session_state:
+      st.session_state['fc'] = fc
+  if 'od' not in st.session_state:
+      st.session_state['od'] = od
+  if 'csd' not in st.session_state:
+      st.session_state['csd'] = csd
+  if 'client' not in st.session_state:
+      st.session_state['client'] = client
+  if 'well_name' not in st.session_state:
+      st.session_state['well_name'] = well_name
+  if 'date' not in st.session_state:
+      st.session_state['date'] = date   
+  if 'excess_cement' not in st.session_state:
+      st.session_state['excess_cement'] = excess_cement
+  if 'dead_vol' not in st.session_state:
+      st.session_state['dead_vol'] = dead_vol
 
-if 'total_slurry_need' not in st.session_state:
+  if 'bump_p' not in st.session_state: 
+      st.session_state['bump_p']
+  if 'cement_den' not in st.session_state: 
+      st.session_state['cement_den']
+  if 'cement_sk' not in st.session_state: 
+      st.session_state['cement_sk']
+  if 'preflush' not in st.session_state: 
+      st.session_state['preflush']    
+  if 'woc' not in st.session_state: 
+      st.session_state['woc']  
+  if 'df' not in st.session_state:
+      st.session_state.df=df
+  switch_page("output")
+  
+  
+"""if 'total_slurry_need' not in st.session_state:
     st.session_state['total_slurry_need'] = total_slurry_needed
 if 'pump_out' not in st.session_state:
     st.session_state['pump_out'] = pump_out
@@ -121,8 +173,9 @@ if 'preflush' not in st.session_state:
     st.session_state['preflush']    
 if 'woc' not in st.session_state: 
     st.session_state['woc']  
+if 'df' not in st.session_state:
+    st.session_state.df=df
 
-if bt0:
   st.dataframe(df) 
   st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
   st.header("OBJECTIVE : TO CEMENT "+str(od)+" INCH CASING/LINER")
@@ -147,4 +200,4 @@ if bt0:
   displace_stk = displacement_fluid/pump_out
   st.write("DISPLACE CEMENT WITH "+str(displacement_fluid)+" BBLS ("+str(displace_stk)+" STK) OF MUD TILL PLUG BUMPS. (BUMPING PRESSUE @ "+str(bump_p)+". PRESSURISE PLUG FURTHER TO 500 PSI)")
   st.write("BLEED OFF PRESSURE AND CHECK FOR BPV HOLDING")          
-  st.write("WOC FOR "+str(woc)+" HRS TILL THE SURFACE CEMENT SETS  test ")
+  st.write("WOC FOR "+str(woc)+" HRS TILL THE SURFACE CEMENT SETS  test ")"""
