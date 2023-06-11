@@ -19,12 +19,6 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-
-
-
-
-
-
 for key in st.session_state.keys():
   del st.session_state[key]
 with st.container():
