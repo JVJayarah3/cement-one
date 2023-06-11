@@ -7,8 +7,8 @@ total_slurry_needed = st.session_state['total_slurry_need']
 with st.container():
   st.title("CEMENTING - DETAILS")
   st.header("TOTAL VOLUME OF SLURRY NEEDED - "+str(total_slurry_needed)
-  cement_yld = st.number_input("CEMENT YIELD (CF/SK) - ")  
-  cement_sk = (total_slurry_needed/(cement_yld*0.178))         
+  cementyld = st.number_input("CEMENT YIELD (CF/SK) - ")  
+  cementsk = (total_slurryneeded/(cementyld*0.178))         
   st.header("CEMENT-RECEIPE)
   col1,col2,col3 = st.columns(3):
   with col1:
