@@ -15,5 +15,7 @@ with st.container():
 st.write("----------------------------------------------------")
 submit1 = st.button("SUBMIT")
 if submit1:
+   if 'rig_value' not in st.session_state:
+                st.session_state['rig_value'] = "RTP"
     switch_page("casing_details")
 
