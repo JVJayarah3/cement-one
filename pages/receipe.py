@@ -14,25 +14,25 @@ with st.container():
   st.header("CEMENT-RECEIPE")
   col1,col2,col3 = st.columns(3)
   with col1:
-    name1 = st.text_input("RECEIPE NAME - ")
-    name2 = st.text_input("RECEIPE NAME - ")
-    name3 = st.text_input("RECEIPE NAME - ")
-    name4 = st.text_input("RECEIPE NAME - ")
-    name5 = st.text_input("RECEIPE NAME - ")
+    name1 = st.text_input("RECEIPE NAME - ",key=1)
+    name2 = st.text_input("RECEIPE NAME - ",key=2)
+    name3 = st.text_input("RECEIPE NAME - ",key=3)
+    name4 = st.text_input("RECEIPE NAME - ",key=4)
+    name5 = st.text_input("RECEIPE NAME - ",key=5)
             
   with col2:
-    bowc1 = st.number_input("BWOC PERCENTAGE - ")
-    bowc2 = st.number_input("BWOC PERCENTAGE - ")
-    bowc3 = st.number_input("BWOC PERCENTAGE - ")
-    bowc4 = st.number_input("BWOC PERCENTAGE - ")
-    bowc5 = st.number_input("BWOC PERCENTAGE - ")
+    bowc1 = st.number_input("BWOC PERCENTAGE - ",key=1)
+    bowc2 = st.number_input("BWOC PERCENTAGE - ",key=2)
+    bowc3 = st.number_input("BWOC PERCENTAGE - ",key=3)
+    bowc4 = st.number_input("BWOC PERCENTAGE - ",key=4)
+    bowc5 = st.number_input("BWOC PERCENTAGE - ",key=5)
          
   with col3:
-    galsk1 = st.number_input("GAL/SACK - ")
-    galsk2 = st.number_input("GAL/SACK - ")
-    galsk3 = st.number_input("GAL/SACK - ")
-    galsk4 = st.number_input("GAL/SACK - ")
-    galsk5 = st.number_input("GAL/SACK - ")
+    galsk1 = st.number_input("GAL/SACK - ",key=1)
+    galsk2 = st.number_input("GAL/SACK - ",key=2)
+    galsk3 = st.number_input("GAL/SACK - ",key=3)
+    galsk4 = st.number_input("GAL/SACK - ",key=4)
+    galsk5 = st.number_input("GAL/SACK - ",key=5)
 
 df = pd.DataFrame()
 df['receipe_name'] = [name1,name2,name3,name4,name5]
