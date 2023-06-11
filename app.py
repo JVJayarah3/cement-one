@@ -18,6 +18,12 @@ def add_bg_from_url():
      )
 
 add_bg_from_url() 
+logo = "https://github.com/JVJayarah3/cementing-one/blob/main/images/kirilogo.png?raw=true"
+col1,col2 = st.columns([5,2])
+with col1:
+  st.header("CEMENTING-ONE")
+with col2:
+  st.image(logo)
 st.title("LOGIN CREDENTIALS")
 st.title("")
 with st.container():
