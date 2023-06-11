@@ -29,7 +29,7 @@ df = st.session_state['df']
 st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
 st.header("OBJECTIVE : TO CEMENT "+str(od)+" INCH CASING/LINER")
 st.write("DATE :"+str(date))
-st.write("WELL DEPTH - "+str(tvd)+" FT TVD /"+str(md)+" FT MD")
+#st.write("WELL DEPTH - "+str(tvd)+" FT TVD /"+str(md)+" FT MD")
 st.write("SHOE @ "+str(csd)+" FT "+"FLOAT COLLAR @ "+str(fc)+" FT")
 st.header("PLAN")
 st.write("PREPARE CEMENTING HEAD WITH PLUGS AND MAKE UP FLOWLINES")
