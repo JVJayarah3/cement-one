@@ -5,6 +5,12 @@ st.text("Test")
 for key in st.session_state.keys():
   del st.session_state[key]
 with st.container():
+  well_name = st.text_input(ENTER THE WELL NAME - )
+  date = st.date_input("SELECT DATE",)
+  client = st.text_input("CLIENT NAME")
+  
+  
+with st.container():
   st.title("WELL-DETAILS")
   tvd = st.number_input("ENTER THE TVD (ft)",)
   md = st.number_input("ENTER THE MD  (ft)",)
@@ -43,6 +49,22 @@ if sub1:
       st.session_state['old_mud'] = old_mud
   if 'toc' not in st.session_state:
       st.session_state['toc'] = toc
+  if 'tvd' not in st.session_state:
+      st.session_state['tvd'] = tvd
+  if 'fc' not in st.session_state:
+      st.session_state['fc'] = fc
+  if 'od' not in st.session_state:
+      st.session_state['od'] = od
+  if 'csd' not in st.session_state:
+      st.session_state['csd'] = csd
+  if 'client' not in st.session_state:
+      st.session_state['client'] = client
+  if 'well_name' not in st.session_state:
+      st.session_state['well_name'] = well_name
+  if 'date' not in st.session_state:
+      st.session_state['date'] = date   
+  if 'excess_cement' not in st.session_state:
+      st.session_state['excess_cement'] = excess_cement
   switch_page("receipe")
 st.write("----------------------------------------------------")
  
