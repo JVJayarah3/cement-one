@@ -85,6 +85,10 @@ df['output'] = df['output-1'] + df['output-2']
 df['output_s'] = df['output'].astype(str)
 df['unit'] =   df['unit-1'] + df['unit-2'] 
 df['final'] = df['receipe_name']+"-"+df['output_s']+" "+df['unit']
+df1 = pd.DataFrame()
+df1['receipe_name'] = df['receipe_name']
+df1['output'] = df['output']
+df['unit'] = df['unit']
 
 bt0 = st.button("SUBMIT")
 bump_p =  ((toc*old_mud*0.052)+((tvd-toc)*cement_den*0.052)-((displacing_mud*fc*0.052)+((tvd-fc)*0.052*cement_den))+500)
