@@ -3,7 +3,9 @@ import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import numpy as np
 
-total_slurry_needed = st.session_state['total_slurry_need'] 
+df = st.session_state['df']
+st.dataframe(df)
+"""total_slurry_needed = st.session_state['total_slurry_need'] 
 pump_out = st.session_state['pump_out']
 displacement_fluid = st.session_state['displacement_fluid']
 displacing_mud = st.session_state['displacing_mud']
@@ -49,4 +51,4 @@ st.write("DROP TOP PLUG")
 displace_stk = displacement_fluid/pump_out
 st.write("DISPLACE CEMENT WITH "+str(displacement_fluid)+" BBLS ("+str(displace_stk)+" STK) OF MUD TILL PLUG BUMPS. (BUMPING PRESSUE @ "+str(bump_p)+". PRESSURISE PLUG FURTHER TO 500 PSI)")
 st.write("BLEED OFF PRESSURE AND CHECK FOR BPV HOLDING")          
-st.write("WOC FOR "+str(woc)+" HRS TILL THE SURFACE CEMENT SETS  test ")
+st.write("WOC FOR "+str(woc)+" HRS TILL THE SURFACE CEMENT SETS  test ")"""
