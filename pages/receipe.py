@@ -9,7 +9,7 @@ total_slurry_needed = 52
 with st.container():
   st.title("CEMENTING - DETAILS")
   st.header("TOTAL VOLUME OF SLURRY NEEDED - "+str(total_slurry_needed))
-  cementyld = st.number_input("CEMENT YIELD (CF-SK) - ")  
+  cementyld = st.number_input("CEMENT YIELD (CF-SK) - ",min_value=0.1)  
   cement_sk = (total_slurry_needed/(cementyld*0.178))         
   st.header("CEMENT-RECEIPE")
   col1,col2,col3 = st.columns(3)
