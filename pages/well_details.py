@@ -15,7 +15,20 @@ with st.container():
 st.write("----------------------------------------------------")
 submit1 = st.button("SUBMIT")
 if submit1:
-   if 'rig_value' not in st.session_state:
-                st.session_state['rig_value'] = "RTP"
-    switch_page("casing_details")
+   if 'tvd' not in st.session_state:
+      st.session_state['tvd'] = tvd
+   if 'md' not in st.session_state:
+      st.session_state['tvd'] = md
+   if 'csd' not in st.session_state:
+      st.session_state['tvd'] = csd
+   if 'fc' not in st.session_state:
+      st.session_state['tvd'] = fc
+   if 'toc' not in st.session_state:
+      st.session_state['tvd'] = toc
+   if 'excess_cement' not in st.session_state:
+      st.session_state['tvd'] = excess_cement
+   if 'holesize' not in st.session_state:
+      st.session_state['tvd'] = holesize
+ 
+  switch_page("casing_details")
 
