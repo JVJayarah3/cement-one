@@ -10,7 +10,7 @@ col1,col2 = st.columns([5,2])
 with col1:
   st.header("CEMENTING-ONE")
 with col2:
-  st.imagw(logo)
+  st.image(logo)
   
 for key in st.session_state.keys():
   del st.session_state[key]
