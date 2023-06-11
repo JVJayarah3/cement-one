@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 st.text("Test")
-
+for key in st.session_state.keys():
+  del st.session_state[key]
 with st.container():
   st.title("WELL-DETAILS")
   tvd = st.number_input("ENTER THE TVD (ft)",)
