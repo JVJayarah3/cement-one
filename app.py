@@ -6,7 +6,7 @@ for key in st.session_state.keys():
   del st.session_state[key]
 with st.container():
   st.title("PROJECT-DETAILS")
-  well_name = st.text_input(ENTER THE WELL NAME - )
+  well_name = st.text_input("ENTER THE WELL NAME - ")
   date = st.date_input("SELECT DATE",)
   client = st.text_input("CLIENT NAME")
   
