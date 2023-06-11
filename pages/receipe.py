@@ -3,7 +3,9 @@ import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 st.text("Test")
 
-total_slurry_needed = st.session_state['total_slurry_need'] 
+total_slurry_needed = 52
+#total_slurry_needed = st.session_state['total_slurry_need'] 
+
 with st.container():
   st.title("CEMENTING - DETAILS")
   st.header("TOTAL VOLUME OF SLURRY NEEDED - "+str(total_slurry_needed))
