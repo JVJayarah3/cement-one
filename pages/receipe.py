@@ -17,6 +17,7 @@ csd = 5156
 well_name = "BK#32"
 date = "11-06-2023"
 md = 5167
+client = "xxxxx"
 #total_slurry_needed = st.session_state['total_slurry_need'] 
 #pump_out = st.session_state['pump_out']
 #displacement_fluid = st.session_state['displacement_fluid']
