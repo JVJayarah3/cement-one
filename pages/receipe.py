@@ -136,7 +136,7 @@ if bt0:
   if 'woc' not in st.session_state: 
       st.session_state['woc']  = woc
   if 'df' not in st.session_state:
-      st.session_state.df=df
+      st.session_state.df=df1
   switch_page("output")
   
   
