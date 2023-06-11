@@ -23,6 +23,7 @@ cement_den = st.session_state['cement_den']
 cement_sk = st.session_state['cement_sk']
 preflush = st.session_state['preflush']
 woc = st.session_state['woc']
+md = st.session_state['md']
 df = st.session_state['df']
 
 st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
