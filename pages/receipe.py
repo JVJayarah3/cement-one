@@ -119,7 +119,8 @@ if bt0:
       st.session_state['excess_cement'] = excess_cement
   if 'dead_vol' not in st.session_state:
       st.session_state['dead_vol'] = dead_vol
-
+  if 'md' not in st.session_state:
+      st.session_state['md'] = md
   if 'bump_p' not in st.session_state: 
       st.session_state['bump_p'] = bump_p
   if 'cement_den' not in st.session_state: 
