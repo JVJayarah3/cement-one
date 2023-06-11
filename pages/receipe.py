@@ -21,18 +21,18 @@ with st.container():
     name5 = st.text_input("RECEIPE NAME - ",key=5)
             
   with col2:
-    bowc1 = st.number_input("BWOC PERCENTAGE - ",key=1)
-    bowc2 = st.number_input("BWOC PERCENTAGE - ",key=2)
-    bowc3 = st.number_input("BWOC PERCENTAGE - ",key=3)
-    bowc4 = st.number_input("BWOC PERCENTAGE - ",key=4)
-    bowc5 = st.number_input("BWOC PERCENTAGE - ",key=5)
+    bowc1 = st.number_input("BWOC PERCENTAGE - ",key=6)
+    bowc2 = st.number_input("BWOC PERCENTAGE - ",key=7)
+    bowc3 = st.number_input("BWOC PERCENTAGE - ",key=8)
+    bowc4 = st.number_input("BWOC PERCENTAGE - ",key=9)
+    bowc5 = st.number_input("BWOC PERCENTAGE - ",key=10)
          
   with col3:
-    galsk1 = st.number_input("GAL/SACK - ",key=1)
-    galsk2 = st.number_input("GAL/SACK - ",key=2)
-    galsk3 = st.number_input("GAL/SACK - ",key=3)
-    galsk4 = st.number_input("GAL/SACK - ",key=4)
-    galsk5 = st.number_input("GAL/SACK - ",key=5)
+    galsk1 = st.number_input("GAL/SACK - ",key=11)
+    galsk2 = st.number_input("GAL/SACK - ",key=12)
+    galsk3 = st.number_input("GAL/SACK - ",key=13)
+    galsk4 = st.number_input("GAL/SACK - ",key=14)
+    galsk5 = st.number_input("GAL/SACK - ",key=15)
 
 df = pd.DataFrame()
 df['receipe_name'] = [name1,name2,name3,name4,name5]
