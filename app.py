@@ -19,8 +19,7 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 st.title("CEMENTING-ONE")
-st.title("LOGIN CREDENTIALS")
-st.title("")
+st.header("LOGIN CREDENTIALS")
 with st.container():
     col2,col3=  st.columns(2)
     with col2:
