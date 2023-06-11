@@ -22,7 +22,7 @@ with st.container():
   holesize = st.number_input("ENTER THE AVERAGE HOLE SIZE (IN)",)
   old_mud = st.number_input("ENTER THE OLD MUD DENSITY (PPG)",)
   displacing_mud =  st.number_input("ENTER THE DISPLACING MUD DENSITY (PPG)",)
-  dead_vol = st.number_input("ENTER THE DEAD VOLUME (BBLS) - "),
+  dead_vol = st.number_input("ENTER THE DEAD VOLUME (BBLS) - ")
 st.write("----------------------------------------------------")
 
 with st.container():
@@ -34,7 +34,7 @@ casing_cap = ((id**2)/1029.4)
 shoetrack = casing_cap*(csd-fc)
 rathole = ((od**2)/1029.4)*(md-csd)
 annulus_vol = (((holesize**2)-(od**2))/1029.4)*((md-toc)-(md-csd))
-total_slurry_needed = ((excess_cement/100)*(shoetrack+rathole+annulus_vol))+(shoetrack+rathole+annulus_vol)+dead_vol
+total_slurry_needed = (excess_cement/100)*(shoetrack+rathole+annulus_vol)+((shoetrack+rathole+annulus_vol)+dead_vol)
 displacement_fluid = casing_cap*fc
 sub1 = st.button("SUBMIT")
 if sub1:
