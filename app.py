@@ -2,6 +2,29 @@ import streamlit as st
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 st.text("Test")
+background_image = "https://github.com/JVJayarah3/cementing-one/blob/main/images/pexels-monstera-7794441.jpg?raw=true"
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://github.com/JVJayarah3/cementing-one/blob/main/images/pexels-monstera-7794441.jpg?raw=true");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
+
+
+
+
+
+
+
 for key in st.session_state.keys():
   del st.session_state[key]
 with st.container():
