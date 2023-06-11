@@ -42,7 +42,7 @@ except:
   pass         
 df['output-2'] = df['galsk']*cement_sk          
 df['unit-1'] = np.where(df['output-1'] != 0 ,"Lbs","")     
-df['unit-2'] = np.where(df['output-2'] != 0 ,"Gal","") \
+df['unit-2'] = np.where(df['output-2'] != 0 ,"Gal","") 
 df['output'] = df['output-1'] + df['output-2']           
 df['unit'] =   df['unit-1'] + df['unit-2'] 
 bt0 = st.button("SUBMIT")
