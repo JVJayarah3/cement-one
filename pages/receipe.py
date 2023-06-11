@@ -85,6 +85,6 @@ if bt0:
   st.write("MIX AND PUMP "+str(total_slurry_needed)+" OF "+str(cement_den)+" PPG SLURRY BY CEMENTING UNIT.")          
   st.write("DROP TOP PLUG")
   displace_stk = displacing_fluid/pump_out
-  st.write("DISPLACE CEMENT WITH "+str(displacing_fluid)+" BBLS ("+str(displace_stk)+" STK) OF MUD TILL PLUG BUMPS. (BUMPING PRESSUE @ "+str(bump_p)+". PRESSURISE PLUG FURTHER TO 500 PSI)")
+  st.write("DISPLACE CEMENT WITH "+str(displacement_fluid)+" BBLS ("+str(displace_stk)+" STK) OF MUD TILL PLUG BUMPS. (BUMPING PRESSUE @ "+str(bump_p)+". PRESSURISE PLUG FURTHER TO 500 PSI)")
   st.write("BLEED OFF PRESSURE AND CHECK FOR BPV HOLDING")          
   st.write("WOC FOR "+str(woc)+" HRS TILL THE SURFACE CEMENT SETS")
