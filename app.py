@@ -19,7 +19,7 @@ with st.container():
   st.title("CASING - DETAILS")
   od = st.number_input("ENTER THE OD OF CASING",)
   id = st.number_input("ENTER THE ID OF CASING",)
-  
+  pump_out = st.number_input("PUMP OUTPUT (BBLS/STK)",)
 casing_cap = ((id**2)/1029.4)
 shoetrack = casing_cap*(csd-fc)
 rathole = ((od**2)/1029.4)*(md-csd)
@@ -30,6 +30,8 @@ if sub1:
   st.write("total_slurry_needed"+str(total_slurry_needed))
   if 'total_slurry_need' not in st.session_state:
       st.session_state['total_slurry_need'] = total_slurry_needed
+  if 'pump_out' not in st.session_state:
+      st.session_state['pump_out'] = pump_out
   switch_page("receipe")
 st.write("----------------------------------------------------")
  
