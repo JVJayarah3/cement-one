@@ -28,7 +28,7 @@ md = st.session_state['md']
 df = st.session_state['df']
 
 
-st.dataframe(df)
+#st.dataframe(df)
 st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
 st.header("OBJECTIVE : TO CEMENT "+str(od)+" INCH CASING/LINER")
 st.write("DATE :"+str(date))
