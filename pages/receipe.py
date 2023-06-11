@@ -19,6 +19,7 @@ date = "11-06-2023"
 md = 5167
 client = "xxxxx"
 excess_cement = "cccc"
+dead_vol = 2
 #total_slurry_needed = st.session_state['total_slurry_need'] 
 #pump_out = st.session_state['pump_out']
 #displacement_fluid = st.session_state['displacement_fluid']
