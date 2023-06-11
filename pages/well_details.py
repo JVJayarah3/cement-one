@@ -30,5 +30,5 @@ if submit1:
    if 'holesize' not in st.session_state:
       st.session_state['tvd'] = holesize
  
-  switch_page("casing_details")
+   switch_page("casing_details")
 
