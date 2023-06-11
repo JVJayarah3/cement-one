@@ -28,7 +28,7 @@ md = st.session_state['md']
 df = st.session_state['df']
 
 
-#st.dataframe(df)
+st.dataframe(df)
 st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
 st.header("OBJECTIVE : TO CEMENT "+str(od)+" INCH CASING/LINER")
 st.write("DATE :"+str(date))
@@ -44,6 +44,7 @@ st.write("M/UP CIRCULATING HEAD AND CIRCULATE AND CONDITION MUD PRIOR TO "+ str(
 st.write("CARRY OUT PRE-JOB SAFETY MEETINGS.")
 st.write("PRESSURE TEST CEMENTING LINES @500 AND 2000 PSI")
 st.write("PRE MIX CEMENT AS PER RECEIPE AND PREPARE "+str(total_slurry_needed)+" OF CEMENT SLURRY ")
+st.dataframe(df)
 preflush_stk = preflush/pump_out
 st.write("PUMP "+str(preflush)+" OF PRE FLUSH THROUGH RIG PUMP. "+"STROKES - "+str(preflush_stk))
 st.write("DROP BOTTOM PLUG.")
