@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 
+csd = st.session_state['csd']
+fc = st.session_state['fc']
+
 with st.container():
   st.title("CASING - DETAILS")
   od = st.number_input("ENTER THE OD OF CASING",)
