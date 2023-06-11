@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
+import time
 background_image = "https://github.com/JVJayarah3/cementing-one/blob/main/images/pexels-monstera-7794441.jpg?raw=true"
 def add_bg_from_url():
     st.markdown(
