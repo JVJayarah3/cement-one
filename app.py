@@ -18,9 +18,12 @@ with st.container():
   st.title("CASING - DETAILS")
   od = st.number_input("ENTER THE OD OF CASING",)
   id = st.number_input("ENTER THE ID OF CASING",)
-  casing_cap = ((id**2)/1029.4)
-
+  
+casing_cap = ((id**2)/1029.4)
 shoetrack = casing_cap*(csd-fc)
-
+rathole = ((od**2)/1029.4)*(md-csd)
+annulus_vol = (((holesize**2)-(od**2))/1029.4)*((md-toc)-(md-csd))
+total_slurry_needed = shoetrack+rathole+annulus_vol 
+st.write("total_slurry_needed"+str(total_slurry_needed))
 st.write("----------------------------------------------------")
  
