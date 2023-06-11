@@ -3,7 +3,7 @@ import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import numpy as np
 
-df = st.session_state['df']
+
 total_slurry_needed = st.session_state['total_slurry_need'] 
 pump_out = st.session_state['pump_out']
 displacement_fluid = st.session_state['displacement_fluid']
@@ -28,7 +28,7 @@ md = st.session_state['md']
 df = st.session_state['df']
 
 
-st.dataframe(df)
+
 st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
 st.header("OBJECTIVE : TO CEMENT "+str(od)+" INCH CASING/LINER")
 st.write("DATE :"+str(date))
