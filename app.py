@@ -13,6 +13,8 @@ with st.container():
   toc = st.number_input("ENTER THE TOC  (ft)",)
   excess_cement = st.number_input("Excess Volume Pecentage (normally 20%)",)
   holesize = st.number_input("ENTER THE AVERAGE HOLE SIZE (IN)",)
+  old_mud = st.number_input("ENTER THE OLD MUD DENSITY (PPG)",)
+  displacing_mud =  st.number_input("ENTER THE DISPLACING MUD DENSITY (PPG)",)
 st.write("----------------------------------------------------")
 
 with st.container():
@@ -35,6 +37,10 @@ if sub1:
       st.session_state['pump_out'] = pump_out
   if 'displacement_fluid' not in st.session_state:
       st.session_state['displacement_fluid'] = displacement_fluid
+  if 'displacing_mud' not in st.session_state:
+      st.session_state['displacing_mud'] = displacing_mud
+  if 'old_mud' not in st.session_state:
+      st.session_state['old_mud'] = old_mud
   switch_page("receipe")
 st.write("----------------------------------------------------")
  
