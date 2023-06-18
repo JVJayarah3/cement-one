@@ -49,8 +49,8 @@ displacement_fluid = casing_cap*fc
 sub1 = st.button("SUBMIT")
 if sub1:
   st.write("total_slurry_needed"+str(total_slurry_needed))
-  if 'total_slurry_need' not in st.session_state:
-      st.session_state['total_slurry_need'] = total_slurry_needed
+  if 'total_slurry_needed' not in st.session_state:
+      st.session_state['total_slurry_needed'] = total_slurry_needed
   if 'pump_out' not in st.session_state:
       st.session_state['pump_out'] = pump_out
   if 'displacement_fluid' not in st.session_state:
