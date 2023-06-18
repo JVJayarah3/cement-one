@@ -79,5 +79,7 @@ if sub1:
       st.session_state['excess_cement'] = excess_cement
   if 'dead_vol' not in st.session_state:
       st.session_state['dead_vol'] = dead_vol
+  if 'md' not in st.session_state:
+      st.session_state['md'] = md
   switch_page("receipe")
 st.write("----------------------------------------------------")
