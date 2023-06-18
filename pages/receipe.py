@@ -35,7 +35,7 @@ client = st.session_state['client']
 well_name = st.session_state['well_name']
 date = st.session_state['date']
 dead_vol = st.session_state['dead_vol']
-
+md = st.session_state['md']
 #for key in st.session_state.keys():
  # del st.session_state[key]
 
