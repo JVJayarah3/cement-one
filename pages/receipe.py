@@ -4,37 +4,37 @@ from streamlit_extras.switch_page_button import switch_page
 import numpy as np
 
 
-total_slurry_needed = 52
-pump_out = 0.084
-displacement_fluid = 112.8
-displacing_mud = 11
-old_mud = 10
-toc = 3937
-tvd = 5167
-fc = 5078
-od = 5.5
-csd = 5156
-well_name = "BK#32"
-date = "11-06-2023"
-md = 5167
-client = "xxxxx"
-excess_cement = "cccc"
-dead_vol = 2
-#total_slurry_needed = st.session_state['total_slurry_need'] 
-#pump_out = st.session_state['pump_out']
-#displacement_fluid = st.session_state['displacement_fluid']
-#displacing_mud = st.session_state['displacing_mud']
-#old_mud = st.session_state['old_mud']
-#toc = st.session_state['toc']
-#tvd = st.session_state['tvd']
-#fc = st.session_state['fc']
-#od = st.session_state['od']
-#csd = st.session_state['csd']
-#excess_cement = st.session_state['excess_cement']
-#client = st.session_state['client']
-#well_name = st.session_state['well_name']
-#date = st.session_state['date']
-#dead_vol = st.session_state['dead_vol']
+#total_slurry_needed = 52
+#pump_out = 0.084
+#displacement_fluid = 112.8
+#displacing_mud = 11
+#old_mud = 10
+#toc = 3937
+#tvd = 5167
+#fc = 5078
+#od = 5.5
+#csd = 5156
+#well_name = "BK#32"
+#date = "11-06-2023"
+#md = 5167
+#client = "xxxxx"
+#excess_cement = "cccc"
+#dead_vol = 2
+total_slurry_needed = st.session_state['total_slurry_need'] 
+pump_out = st.session_state['pump_out']
+displacement_fluid = st.session_state['displacement_fluid']
+displacing_mud = st.session_state['displacing_mud']
+old_mud = st.session_state['old_mud']
+toc = st.session_state['toc']
+tvd = st.session_state['tvd']
+fc = st.session_state['fc']
+od = st.session_state['od']
+csd = st.session_state['csd']
+excess_cement = st.session_state['excess_cement']
+client = st.session_state['client']
+well_name = st.session_state['well_name']
+date = st.session_state['date']
+dead_vol = st.session_state['dead_vol']
 
 for key in st.session_state.keys():
   del st.session_state[key]
