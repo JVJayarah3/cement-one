@@ -20,7 +20,7 @@ import numpy as np
 #client = "xxxxx"
 #excess_cement = "cccc"
 #dead_vol = 2
-total_slurry_needed = st.session_state['total_slurry_need'] 
+total_slurry_needed = st.session_state['total_slurry_needed'] 
 pump_out = st.session_state['pump_out']
 displacement_fluid = st.session_state['displacement_fluid']
 displacing_mud = st.session_state['displacing_mud']
