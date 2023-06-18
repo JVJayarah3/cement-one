@@ -36,8 +36,8 @@ well_name = st.session_state['well_name']
 date = st.session_state['date']
 dead_vol = st.session_state['dead_vol']
 
-for key in st.session_state.keys():
-  del st.session_state[key]
+#for key in st.session_state.keys():
+ # del st.session_state[key]
 
 with st.container():
   st.title("CEMENTING - DETAILS")
